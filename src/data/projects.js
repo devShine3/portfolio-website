@@ -33,7 +33,7 @@ const projects = [
     tags: ["React", "Bootstrap"],
     image: "/bike.jpeg",
     githubLink: "https://github.com/devShine3/portfolio-website",
-    liveLink: "https://portfolio-website-devshine3s-projects.vercel.app/"
+    liveLink: "https://portfolio-website-two-kohl.vercel.app/"
   }
 ];
 
