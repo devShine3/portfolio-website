@@ -32,8 +32,8 @@ const projects = [
     description: "Personal portfolio website built with React and Bootstrap.",
     tags: ["React", "Bootstrap"],
     image: "/bike.jpeg",
-    githubLink: "https://github.com/devShine3/my-portfolio",
-    liveLink: ""
+    githubLink: "https://github.com/devShine3/portfolio-website",
+    liveLink: "https://portfolio-website-devshine3s-projects.vercel.app/"
   }
 ];
 
