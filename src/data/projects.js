@@ -4,7 +4,7 @@ const projects = [
     title: "Odoo ERP Fleet Management",
     description: "Developed a fleet management module for Odoo ERP using Python and PostgreSQL.",
     tags: ["Python", "Odoo", "PostgreSQL"],
-    image: "/fleet.jpeg",
+    image: "/astronut.svg",
     githubLink: "https://github.com/devShine3/Shineworkshop",
     liveLink: ""
   },
@@ -13,7 +13,7 @@ const projects = [
     title: "Odoo ERP Customization",
     description: "Developed customized Odoo modules for workshop fleet management with Python and XML.",
     tags: ["Python", "Odoo", "PostgreSQL"],
-    image: "/hotel.jpeg",
+    image: "/vite.svg",
     githubLink: "https://github.com/devShine3/Shinehotelia",
     liveLink: ""
   },
@@ -22,7 +22,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio website built with Django and Bootstrap.",
     tags: ["Django", "Bootstrap"],
-    image: "/favicon.jpeg",
+    image: "/bike.svg",
     githubLink: "https://github.com/devShine3/my-portfolio",
     liveLink: "https://shine-portfolio.onrender.com/"
   },
@@ -31,7 +31,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio website built with React and Bootstrap.",
     tags: ["React", "Bootstrap"],
-    image: "/bike.jpeg",
+    image: "/astronut.svg",
     githubLink: "https://github.com/devShine3/portfolio-website",
     liveLink: "https://portfolio-website-two-kohl.vercel.app/"
   }

@@ -37,10 +37,13 @@ const Projects = () => {
           {filteredProjects.map((project) => (
             <Col key={project.id} lg={4} md={6}>
               <Card className="h-100 project-card">
-                <Card.Img 
-                  variant="top" 
-                  src={project.image} 
-                  alt={project.title} 
+                <Card.Img
+                  variant="top"
+                  src={project.image}
+                  alt={project.title}
+                  onError={(event) => {
+                    event.currentTarget.src = '/vite.svg';
+                  }}
                 />
                 <Card.Body>
                   <Card.Title>{project.title}</Card.Title>
