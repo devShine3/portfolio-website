@@ -22,7 +22,7 @@ const projects = [
     title: "Portfolio Website",
     description: "Personal portfolio website built with Django and Bootstrap.",
     tags: ["Django", "Bootstrap"],
-    image: "favicon.jpeg",
+    image: "/favicon.jpeg",
     githubLink: "https://github.com/devShine3/my-portfolio",
     liveLink: "https://shine-portfolio.onrender.com/"
   },
