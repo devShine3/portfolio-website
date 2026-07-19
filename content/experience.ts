@@ -24,7 +24,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "rons",
-    period: "Jul 2025 — Present",
+    period: "Jul 2025 — Jan 2026",
     role: "Developer",
     company: "Rons Enviro Care LLC",
     location: "Ras Al Khor · On-site",
