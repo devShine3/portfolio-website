@@ -3,11 +3,37 @@ export type Experience = {
   period: string;
   role: string;
   company: string;
+  location?: string;
   bullets: string[];
   stack: string[];
 };
 
 export const experiences: Experience[] = [
+  {
+    id: "elrace",
+    period: "Feb 2026 — Present",
+    role: "Developer",
+    company: "El Race Cons. & Gen. Cont. Co. LLC",
+    location: "On-site",
+    bullets: [
+      "Build and extend production Odoo ERP — payroll costing, employee request workflows, clearance and IT hardware requests.",
+      "Ship ops-finance improvements for petty cash batches, expense approvals, and project/city governance.",
+      "Maintain a centralized mobile API layer (auth, HR/projects/requests) with consistent REST responses.",
+    ],
+    stack: ["Python", "Odoo", "PostgreSQL", "APIs", "JavaScript"],
+  },
+  {
+    id: "rons",
+    period: "Jul 2025 — Present",
+    role: "Developer",
+    company: "Rons Enviro Care LLC",
+    location: "Ras Al Khor · On-site",
+    bullets: [
+      "Full-time development supporting business systems and operational tooling.",
+      "Work across data analysis and project delivery for day-to-day product and process needs.",
+    ],
+    stack: ["Python", "Data Analysis", "Project Delivery"],
+  },
   {
     id: "odoo-dev",
     period: "2022 — 2024",
