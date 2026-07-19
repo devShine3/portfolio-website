@@ -1,73 +1,67 @@
-/* eslint-disable no-unused-vars */
 import { useState } from 'react';
-import { Container, Row, Col, Card, Button, Badge, Modal } from 'react-bootstrap';
+import { Container, Row, Col, Card, Button, Badge } from 'react-bootstrap';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import projects from '../data/projects';
 import '../styles/Projects.css';
 
+const FILTERS = ['all', 'Python', 'Django', 'React', 'Odoo'];
+
 const Projects = () => {
   const [filter, setFilter] = useState('all');
-  const [selectedProject, setSelectedProject] = useState(null);
-  const [showModal, setShowModal] = useState(false);
 
-  // Filter projects
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(project => project.tags.includes(filter));
-
-  // Animation variants
-  const container = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 }
-    }
-  };
-
-  const item = {
-    hidden: { y: 20, opacity: 0 },
-    visible: { y: 0, opacity: 1 }
-  };
+  const filteredProjects =
+    filter === 'all'
+      ? projects
+      : projects.filter((project) => project.tags.includes(filter));
 
   return (
     <section id="projects" className="projects-section py-5">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={container}
+        <motion.h2
+          className="section-title text-center mb-5"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
         >
-          <h2 className="section-title text-center mb-5">
-            My <span className="highlight">Projects</span>
-          </h2>
+          My <span className="highlight">Projects</span>
+        </motion.h2>
 
-          {/* Filter Buttons */}
-          <div className="text-center mb-4">
-            {['all', 'Python', 'Django', 'React', 'Odoo'].map((tag) => (
-              <Button
-                key={tag}
-                variant={filter === tag ? 'primary' : 'outline-primary'}
-                size="sm"
-                className="me-2 mb-2"
-                onClick={() => setFilter(tag)}
-              >
-                {tag === 'all' ? 'All' : tag}
-              </Button>
-            ))}
-          </div>
+        <div className="text-center mb-4">
+          {FILTERS.map((tag) => (
+            <Button
+              key={tag}
+              variant={filter === tag ? 'primary' : 'outline-primary'}
+              size="sm"
+              className="me-2 mb-2"
+              onClick={() => setFilter(tag)}
+            >
+              {tag === 'all' ? 'All' : tag}
+            </Button>
+          ))}
+        </div>
 
-          {/* Projects Grid */}
-          <Row className="g-4">
-            {filteredProjects.map((project) => (
+        <Row className="g-4">
+          {filteredProjects.length === 0 ? (
+            <Col>
+              <p className="text-center text-muted mb-0">
+                No projects found for this filter.
+              </p>
+            </Col>
+          ) : (
+            filteredProjects.map((project, index) => (
               <Col key={project.id} lg={4} md={6}>
-                <motion.div variants={item}>
+                <motion.div
+                  key={`${filter}-${project.id}`}
+                  initial={{ opacity: 0, y: 16 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.35, delay: index * 0.06 }}
+                >
                   <Card className="h-100 project-card">
-                    <Card.Img 
-                      variant="top" 
-                      src={project.image} 
-                      alt={project.title} 
+                    <Card.Img
+                      variant="top"
+                      src={project.image}
+                      alt={project.title}
                     />
                     <Card.Body>
                       <Card.Title>{project.title}</Card.Title>
@@ -85,6 +79,7 @@ const Projects = () => {
                         variant="outline-primary"
                         href={project.githubLink}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="me-2"
                       >
                         <FaGithub className="me-1" /> Code
@@ -94,6 +89,7 @@ const Projects = () => {
                           variant="primary"
                           href={project.liveLink}
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <FaExternalLinkAlt className="me-1" /> Demo
                         </Button>
@@ -102,9 +98,9 @@ const Projects = () => {
                   </Card>
                 </motion.div>
               </Col>
-            ))}
-          </Row>
-        </motion.div>
+            ))
+          )}
+        </Row>
       </Container>
     </section>
   );
