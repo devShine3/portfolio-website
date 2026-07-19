@@ -4,7 +4,8 @@ import styles from "./work.module.css";
 
 export const metadata: Metadata = {
   title: "Work",
-  description: "Odoo systems I’ve built — ERP modules, workflows, and APIs.",
+  description:
+    "Odoo systems and full-stack products — ERP modules, APIs, and Lann Pya.",
 };
 
 export default function WorkPage() {
@@ -12,10 +13,10 @@ export default function WorkPage() {
     <section className={`${styles.page} page-enter`}>
       <header className={styles.header}>
         <p className="mono">01 / Work</p>
-        <h1 className={styles.title}>Odoo I’ve built</h1>
+        <h1 className={styles.title}>Selected work</h1>
         <p className={styles.lead}>
-          Production modules and workflows — payroll, requests, finance ops, APIs.
-          Plus one public product on top of Odoo.
+          Mostly Odoo — payroll, requests, finance ops, APIs. Also full-stack
+          products like Lann Pya.
         </p>
       </header>
       <WorkList />

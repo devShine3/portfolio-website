@@ -36,7 +36,7 @@ export const skills = {
 export const site = {
   name: "Htet Aung Shine",
   nameDisplay: "HTET AUNG SHINE",
-  tagline: "I build Odoo systems",
+  tagline: "Odoo systems · full-stack products",
   email: null as string | null,
   resume: "/HTETAUNGSHINE.pdf",
   github: "https://github.com/devShine3",
