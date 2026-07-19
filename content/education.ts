@@ -28,15 +28,20 @@ export const education: EducationItem[] = [
 
 export const skills = {
   languages: ["Python", "JavaScript", "TypeScript", "SQL"],
-  frameworks: ["Odoo", "Django", "React", "Node.js", "Express"],
-  data: ["PostgreSQL", "MongoDB"],
-  practice: ["ERP customization", "REST APIs", "Reporting", "Debugging"],
+  frameworks: ["Odoo", "Next.js", "React", "Django", "Node.js"],
+  data: ["PostgreSQL", "MongoDB", "Redis"],
+  practice: [
+    "ERP workflows",
+    "Payroll & costing",
+    "REST APIs",
+    "Approvals & ops finance",
+  ],
 } as const;
 
 export const site = {
   name: "Htet Aung Shine",
   nameDisplay: "HTET AUNG SHINE",
-  tagline: "Odoo & full-stack systems",
+  tagline: "Odoo systems · APIs · full-stack products",
   email: null as string | null,
   resume: "/HTETAUNGSHINE.pdf",
   github: "https://github.com/devShine3",

@@ -22,8 +22,8 @@ export default function HomePage() {
         </a>
       </div>
       <p className={styles.meta}>
-        <span className="mono">role</span>
-        <span>odoo · python · full-stack</span>
+        <span className="mono">focus</span>
+        <span>odoo · python · apis · next.js</span>
       </p>
     </section>
   );

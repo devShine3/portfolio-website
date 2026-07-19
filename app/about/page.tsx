@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { education, skills, site } from "@/content/education";
 import styles from "./about.module.css";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Htet Aung Shine — Odoo and full-stack development.",
+  description:
+    "Htet Aung Shine — Odoo developer building ERP workflows, APIs, and products like Lann Pya.",
 };
 
 export default function AboutPage() {
@@ -13,7 +15,7 @@ export default function AboutPage() {
     <section className={`${styles.page} page-enter`}>
       <header className={styles.header}>
         <p className="mono">03 / About</p>
-        <h1 className={styles.title}>Builder of ERP systems</h1>
+        <h1 className={styles.title}>Odoo & systems engineer</h1>
       </header>
 
       <div className={styles.intro}>
@@ -29,20 +31,27 @@ export default function AboutPage() {
         </div>
         <div className={styles.copy}>
           <p>
-            I design and ship Odoo modules and full-stack features — Python
-            backends, PostgreSQL models, and the XML/JS layers that make ERP
-            workflows usable for real teams.
+            I build production Odoo systems — payroll costing, employee request
+            flows, expense and petty-cash ops, and the Python/PostgreSQL layers
+            that keep them reliable for real teams.
           </p>
           <p>
-            Most of my work sits between business process and code: fleet
-            operations, hotel flows, reports, and the quiet glue that keeps
-            systems reliable.
+            I also ship full products end to end.{" "}
+            <a href="https://lannpya.site" target="_blank" rel="noopener noreferrer">
+              Lann Pya
+            </a>{" "}
+            is one: an Odoo-backed content platform with a Next.js front end for
+            Myanmar-language guides, news, and community publishing.
+          </p>
+          <p>
+            Day to day I sit between process and code — models, approvals, REST
+            APIs for mobile, reports — the work that makes ERP usable, not just
+            installed. See{" "}
+            <Link href="/work">selected work</Link>.
           </p>
           <pre className={styles.snippet} aria-hidden="true">
-            <code>{`# modules/fleet/models/vehicle.py
-class FleetVehicle(models.Model):
-    _name = "fleet.vehicle"
-    name = fields.Char(required=True)`}</code>
+            <code>{`# api / payslip run / request.approve
+# Odoo models · PostgreSQL · REST for mobile`}</code>
           </pre>
         </div>
       </div>
