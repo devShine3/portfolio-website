@@ -4,7 +4,8 @@ import styles from "./experience.module.css";
 
 export const metadata: Metadata = {
   title: "Experience",
-  description: "Professional experience in Odoo development and IT.",
+  description:
+    "Developer experience — El Race, Rons Enviro Care, and earlier Odoo work.",
 };
 
 export default function ExperiencePage() {
@@ -23,7 +24,12 @@ export default function ExperiencePage() {
             </div>
             <div className={styles.body}>
               <h2 className={styles.role}>{job.role}</h2>
-              <p className={styles.company}>{job.company}</p>
+              <p className={styles.company}>
+                {job.company}
+                {job.location ? (
+                  <span className={styles.location}> · {job.location}</span>
+                ) : null}
+              </p>
               <ul className={styles.bullets}>
                 {job.bullets.map((bullet) => (
                   <li key={bullet}>{bullet}</li>
