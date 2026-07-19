@@ -23,7 +23,7 @@ export default function HomePage() {
       </div>
       <p className={styles.meta}>
         <span className="mono">focus</span>
-        <span>odoo · python · apis · next.js</span>
+        <span>odoo · python · postgresql</span>
       </p>
     </section>
   );

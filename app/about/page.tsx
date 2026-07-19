@@ -15,7 +15,7 @@ export default function AboutPage() {
     <section className={`${styles.page} page-enter`}>
       <header className={styles.header}>
         <p className="mono">03 / About</p>
-        <h1 className={styles.title}>Odoo & systems engineer</h1>
+        <h1 className={styles.title}>I build Odoo systems</h1>
       </header>
 
       <div className={styles.intro}>
