@@ -1,0 +1,22 @@
+.page {
+  padding-top: 2.5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  max-width: var(--max);
+}
+
+.title {
+  margin: 0.65rem 0 0;
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0.75rem 0 0;
+  color: var(--muted);
+  max-width: 28rem;
+}

@@ -1,0 +1,85 @@
+.page {
+  padding-top: 2.5rem;
+  max-width: var(--max);
+}
+
+.header {
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  margin: 0.65rem 0 0;
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1.25rem;
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.item:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.meta {
+  padding-top: 0.35rem;
+}
+
+.body {
+  min-width: 0;
+}
+
+.role {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 550;
+  letter-spacing: -0.02em;
+}
+
+.company {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bullets {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.bullets li + li {
+  margin-top: 0.4rem;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 1rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+}

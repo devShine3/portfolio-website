@@ -1,0 +1,152 @@
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.chip {
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.4rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.chip:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.chipActive {
+  color: var(--bg);
+  background: var(--ink);
+  border-color: var(--ink);
+}
+
+.empty {
+  color: var(--muted);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  padding: 1.75rem 0;
+  border-top: 1px solid var(--line);
+  animation: fadeUp 0.4s ease both;
+}
+
+.row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.rowHead {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr auto;
+  gap: 0.75rem 1rem;
+  align-items: baseline;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+  font-weight: 550;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.actions a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.actions a:hover {
+  color: var(--accent);
+}
+
+.summary {
+  margin: 0.85rem 0 0;
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0.85rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.media {
+  margin-top: 1.25rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.45s ease, opacity 0.35s ease, margin 0.35s ease;
+}
+
+.row:hover .media,
+.row:focus-within .media {
+  max-height: 28rem;
+  opacity: 1;
+  margin-top: 1.25rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-height: 22rem;
+  object-fit: cover;
+  filter: grayscale(0.15) contrast(1.02);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .rowHead {
+    grid-template-columns: 2rem 1fr;
+  }
+
+  .actions {
+    grid-column: 2;
+  }
+
+  .media {
+    max-height: 16rem;
+    opacity: 1;
+  }
+}

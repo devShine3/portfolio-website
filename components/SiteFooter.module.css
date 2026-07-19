@@ -1,0 +1,44 @@
+.footer {
+  border-top: 1px solid var(--line);
+  margin-top: auto;
+}
+
+.inner {
+  max-width: var(--max-wide);
+  margin: 0 auto;
+  padding: 1.5rem var(--pad) 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.meta {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
+.sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.links {
+  display: flex;
+  gap: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.links a:hover {
+  color: var(--accent);
+}
