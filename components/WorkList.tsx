@@ -50,13 +50,6 @@ export default function WorkList() {
                 </span>
                 <h2 className={styles.title}>{project.title}</h2>
                 <div className={styles.actions}>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Code
-                  </a>
                   {project.live ? (
                     <a
                       href={project.live}
@@ -66,23 +59,39 @@ export default function WorkList() {
                       Live
                     </a>
                   ) : null}
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Code
+                    </a>
+                  ) : null}
                 </div>
               </div>
               <p className={styles.summary}>{project.summary}</p>
+              {project.outcome ? (
+                <p className={styles.outcome}>
+                  <span className="mono">Outcome</span> {project.outcome}
+                </p>
+              ) : null}
               <p className={styles.tags}>
                 {project.tags.map((tag) => (
                   <span key={tag}>{tag}</span>
                 ))}
               </p>
-              <div className={styles.media}>
-                <Image
-                  src={project.image}
-                  alt=""
-                  width={960}
-                  height={540}
-                  className={styles.image}
-                />
-              </div>
+              {project.image ? (
+                <div className={styles.media}>
+                  <Image
+                    src={project.image}
+                    alt=""
+                    width={960}
+                    height={540}
+                    className={styles.image}
+                  />
+                </div>
+              ) : null}
             </li>
           ))}
         </ul>

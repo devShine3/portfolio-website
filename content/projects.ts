@@ -2,59 +2,77 @@ export type Project = {
   id: string;
   title: string;
   summary: string;
+  outcome?: string;
   tags: string[];
-  image: string;
-  github: string;
+  image?: string;
+  github?: string;
   live?: string;
 };
 
 export const projectFilters = [
   "All",
-  "Python",
-  "Django",
-  "React",
   "Odoo",
+  "Python",
+  "Next.js",
+  "APIs",
 ] as const;
 
 export type ProjectFilter = (typeof projectFilters)[number];
 
 export const projects: Project[] = [
   {
-    id: "fleet",
-    title: "Odoo Fleet Operations",
+    id: "lannpya",
+    title: "Lann Pya — guides platform",
     summary:
-      "Custom Odoo module for workshop fleet tracking — Python models, PostgreSQL, and operational reporting for day-to-day vehicle workflows.",
-    tags: ["Python", "Odoo", "PostgreSQL"],
-    image: "/fleet.jpeg",
+      "Full product for Myanmar youth in the UAE: official guides, news, and community publishing. Odoo backend for content, auth, feeds, and REST APIs; Next.js front end in Myanmar language.",
+    outcome:
+      "Shipped as a live public site with editorial workflow, community posts, and searchable guide catalog.",
+    tags: ["Odoo", "Python", "Next.js", "APIs", "PostgreSQL"],
+    live: "https://lannpya.site",
+  },
+  {
+    id: "payroll-costing",
+    title: "Payroll costing engine",
+    summary:
+      "Extended enterprise payslip runs with cost allocation, reporting rules, and batch processing on top of Odoo payroll.",
+    outcome:
+      "Finance and HR can attribute labor cost with less manual spreadsheet work after each run.",
+    tags: ["Odoo", "Python", "PostgreSQL"],
+  },
+  {
+    id: "request-platform",
+    title: "Employee request platform",
+    summary:
+      "Multi-type request workflows — transfers, IT hardware, clearance, and related HR ops — with approvals, status tracking, and form-driven records.",
+    outcome:
+      "Replaced fragmented email/paper requests with one structured path inside ERP.",
+    tags: ["Odoo", "Python", "PostgreSQL"],
+  },
+  {
+    id: "petty-cash",
+    title: "Petty cash & expense ops",
+    summary:
+      "Batch petty-cash flows, holder approval, project/city governance, and tighter expense-sheet behavior for day-to-day finance operations.",
+    outcome:
+      "Ops teams submit and review cash in batches instead of one-off entries.",
+    tags: ["Odoo", "Python", "PostgreSQL"],
+  },
+  {
+    id: "mobile-api",
+    title: "Mobile backend API layer",
+    summary:
+      "Centralized REST layer for a mobile app: auth, domain controllers (HR, projects, requests), consistent responses, and cache-ready services.",
+    outcome:
+      "One stable API surface for mobile clients instead of ad-hoc endpoints.",
+    tags: ["Odoo", "Python", "APIs"],
+  },
+  {
+    id: "fleet-hotel",
+    title: "Early ERP modules — fleet & hotel",
+    summary:
+      "Earlier client Odoo work: workshop fleet tracking and hotel/workshop customizations (Python models, XML views, PostgreSQL).",
+    outcome: "Foundation projects that shaped later enterprise ERP delivery.",
+    tags: ["Odoo", "Python", "PostgreSQL"],
     github: "https://github.com/devShine3/Shineworkshop",
-  },
-  {
-    id: "hotel",
-    title: "Odoo Hotel Management",
-    summary:
-      "Tailored hotel and workshop ERP extensions — XML views, Python business logic, and PostgreSQL-backed records for client-specific flows.",
-    tags: ["Python", "Odoo", "PostgreSQL"],
-    image: "/hotel.jpeg",
-    github: "https://github.com/devShine3/Shinehotelia",
-  },
-  {
-    id: "django-portfolio",
-    title: "Portfolio — Django",
-    summary:
-      "Earlier personal site built with Django and Bootstrap — server-rendered pages and a simple project showcase.",
-    tags: ["Django", "Bootstrap", "Python"],
-    image: "/favicon.jpeg",
-    github: "https://github.com/devShine3/my-portfolio",
-    live: "https://shine-portfolio.onrender.com/",
-  },
-  {
-    id: "react-portfolio",
-    title: "Portfolio — React",
-    summary:
-      "Client-side portfolio iteration in React — routing, project filters, and Vercel deployment.",
-    tags: ["React", "Bootstrap"],
-    image: "/bike.jpeg",
-    github: "https://github.com/devShine3/portfolio-website",
-    live: "https://portfolio-website-two-kohl.vercel.app/",
   },
 ];

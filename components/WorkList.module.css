@@ -84,9 +84,20 @@
 
 .summary {
   margin: 0.85rem 0 0;
-  max-width: 40rem;
+  max-width: 42rem;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.outcome {
+  margin: 0.65rem 0 0;
+  max-width: 42rem;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.outcome .mono {
+  margin-right: 0.55rem;
 }
 
 .tags {
