@@ -16,9 +16,9 @@ export const experiences: Experience[] = [
     company: "El Race Cons. & Gen. Cont. Co. LLC",
     location: "On-site",
     bullets: [
-      "Build and extend production Odoo ERP — payroll costing, employee request workflows, clearance and IT hardware requests.",
+      "Build and extend production Odoo ERP — payroll and labor costing, HR requests and clearance, IT hardware workflows.",
       "Ship ops-finance improvements for petty cash batches, expense approvals, and project/city governance.",
-      "Maintain a centralized mobile API layer (auth, HR/projects/requests) with consistent REST responses.",
+      "Maintain a centralized mobile and hub API layer (auth, HR/projects/requests) with consistent REST responses.",
     ],
     stack: ["Python", "Odoo", "PostgreSQL", "APIs", "JavaScript"],
   },

@@ -34,21 +34,21 @@ export const projects: Project[] = [
   },
   {
     id: "payroll-costing",
-    title: "Payroll costing engine",
+    title: "Payroll & labor costing",
     summary:
-      "Extended enterprise payslip runs with cost allocation, reporting rules, and batch processing on top of Odoo payroll.",
+      "Enterprise payslip runs with labor payroll logic, cost allocation, reporting rules, and batch processing on top of Odoo payroll — built for real close cycles, not demos.",
     outcome:
-      "Finance and HR can attribute labor cost with less manual spreadsheet work after each run.",
+      "Finance and HR can attribute labor cost and close payslip runs with less spreadsheet work.",
     tags: ["Odoo", "Python", "PostgreSQL"],
     private: true,
   },
   {
     id: "request-platform",
-    title: "Employee request platform",
+    title: "HR requests & clearance",
     summary:
-      "Multi-type request workflows — transfers, IT hardware, clearance, and related HR ops — with approvals, status tracking, and form-driven records.",
+      "Unified request platform covering employee transfers, IT hardware, clearance forms, and related HR ops — approvals, status tracking, and structured records inside ERP.",
     outcome:
-      "Replaced fragmented email/paper requests with one structured path inside ERP.",
+      "One path for staff requests and exit/clearance instead of email and paper trails.",
     tags: ["Odoo", "Python", "PostgreSQL"],
     private: true,
   },
@@ -64,11 +64,11 @@ export const projects: Project[] = [
   },
   {
     id: "mobile-api",
-    title: "Mobile backend API layer",
+    title: "Mobile & hub API layer",
     summary:
-      "Centralized REST layer for a mobile app: auth, domain controllers (HR, projects, requests), consistent responses, and cache-ready services.",
+      "Centralized REST layer for mobile and hub clients: auth, projects, HR, requests, and related domains — consistent responses and cache-ready services.",
     outcome:
-      "One stable API surface for mobile clients instead of ad-hoc endpoints.",
+      "One stable API surface for apps instead of scattered, one-off endpoints.",
     tags: ["Odoo", "Python", "APIs"],
     private: true,
   },
