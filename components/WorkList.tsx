@@ -68,6 +68,9 @@ export default function WorkList() {
                       Code
                     </a>
                   ) : null}
+                  {project.private || (!project.live && !project.github) ? (
+                    <span className={styles.private}>Private · enterprise</span>
+                  ) : null}
                 </div>
               </div>
               <p className={styles.summary}>{project.summary}</p>

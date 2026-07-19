@@ -98,8 +98,12 @@ export default function AboutPage() {
 
       <section className={styles.block}>
         <h2 className={styles.blockTitle}>
-          <span className="mono">education</span>
+          <span className="mono">background</span>
         </h2>
+        <p className={styles.eduLead}>
+          Formal study sits behind the work — Odoo and production systems are the
+          main story.
+        </p>
         <ul className={styles.eduList}>
           {education.map((item) => (
             <li key={item.id} className={styles.eduItem}>

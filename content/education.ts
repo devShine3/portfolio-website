@@ -5,24 +5,19 @@ export type EducationItem = {
   detail: string;
 };
 
+/** Order: foundation first, then continuing study — Odoo story stays primary on About */
 export const education: EducationItem[] = [
-  {
-    id: "mern",
-    year: "2025",
-    institution: "Edoxi",
-    detail: "MERN Full Stack Development — certification",
-  },
   {
     id: "nmc",
     year: "2016",
     institution: "National Management College",
-    detail: "Diploma in Information Technology",
+    detail: "Diploma in Information Technology — systems & programming foundation",
   },
   {
-    id: "high-school",
-    year: "2015",
-    institution: "Basic Education High School",
-    detail: "High School Diploma",
+    id: "mern",
+    year: "2025",
+    institution: "Edoxi",
+    detail: "Additional certification — MERN full-stack (supporting web work)",
   },
 ];
 

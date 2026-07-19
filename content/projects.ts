@@ -7,6 +7,8 @@ export type Project = {
   image?: string;
   github?: string;
   live?: string;
+  /** When true (or when no public links), show a quiet private label */
+  private?: boolean;
 };
 
 export const projectFilters = [
@@ -38,6 +40,7 @@ export const projects: Project[] = [
     outcome:
       "Finance and HR can attribute labor cost with less manual spreadsheet work after each run.",
     tags: ["Odoo", "Python", "PostgreSQL"],
+    private: true,
   },
   {
     id: "request-platform",
@@ -47,6 +50,7 @@ export const projects: Project[] = [
     outcome:
       "Replaced fragmented email/paper requests with one structured path inside ERP.",
     tags: ["Odoo", "Python", "PostgreSQL"],
+    private: true,
   },
   {
     id: "petty-cash",
@@ -56,6 +60,7 @@ export const projects: Project[] = [
     outcome:
       "Ops teams submit and review cash in batches instead of one-off entries.",
     tags: ["Odoo", "Python", "PostgreSQL"],
+    private: true,
   },
   {
     id: "mobile-api",
@@ -65,6 +70,7 @@ export const projects: Project[] = [
     outcome:
       "One stable API surface for mobile clients instead of ad-hoc endpoints.",
     tags: ["Odoo", "Python", "APIs"],
+    private: true,
   },
   {
     id: "fleet-hotel",

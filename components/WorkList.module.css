@@ -82,6 +82,12 @@
   color: var(--accent);
 }
 
+.private {
+  color: var(--muted);
+  opacity: 0.85;
+  white-space: nowrap;
+}
+
 .summary {
   margin: 0.85rem 0 0;
   max-width: 42rem;
