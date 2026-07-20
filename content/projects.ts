@@ -31,6 +31,7 @@ export const projects: Project[] = [
       "Install → assign groups → run workflows without custom development.",
     tags: ["Odoo", "Python", "PostgreSQL"],
     github: "https://github.com/devShine3/hr-ops-suite",
+    live: "https://apps.odoo.com/apps/modules/18.0/hr_ops_suite",
   },
   {
     id: "hr-ops-portal",
@@ -41,6 +42,7 @@ export const projects: Project[] = [
       "Shows production-style frontend UX for the same HR workflows as the Odoo module.",
     tags: ["Next.js", "APIs"],
     github: "https://github.com/devShine3/hr-request-portal",
+    live: "https://hr-request-portal.vercel.app",
   },
   {
     id: "lannpya",
