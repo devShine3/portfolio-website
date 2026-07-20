@@ -23,6 +23,16 @@ export type ProjectFilter = (typeof projectFilters)[number];
 
 export const projects: Project[] = [
   {
+    id: "hr-ops-suite",
+    title: "HR Ops Suite — Odoo app",
+    summary:
+      "Install-ready Odoo 18 application: employee transfer, IT hardware, and clearance requests with approvals, checklist sign-off, PDF reports, and demo data.",
+    outcome:
+      "Install → assign groups → run workflows without custom development.",
+    tags: ["Odoo", "Python", "PostgreSQL"],
+    github: "https://github.com/devShine3/hr-ops-suite",
+  },
+  {
     id: "lannpya",
     title: "Lann Pya — guides platform",
     summary:
