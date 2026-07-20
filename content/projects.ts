@@ -37,9 +37,9 @@ export const projects: Project[] = [
     id: "hr-ops-portal",
     title: "HR Ops Portal — frontend app",
     summary:
-      "Next.js employee self-service portal UI for transfer, IT hardware, and clearance requests, with dynamic forms, role-based actions, status timeline, and checklist progress.",
+      "Next.js employee self-service portal UI for transfer, IT hardware, and clearance requests, with dynamic forms, role-based actions, status timeline, checklist progress, and ops analytics dashboard.",
     outcome:
-      "Shows production-style frontend UX for the same HR workflows as the Odoo module.",
+      "Shows production-style frontend UX and reporting for the same HR workflows as the Odoo module.",
     tags: ["Next.js", "APIs"],
     github: "https://github.com/devShine3/hr-request-portal",
     live: "https://hr-request-portal.vercel.app",
