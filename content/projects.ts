@@ -33,6 +33,16 @@ export const projects: Project[] = [
     github: "https://github.com/devShine3/hr-ops-suite",
   },
   {
+    id: "hr-ops-portal",
+    title: "HR Ops Portal — frontend app",
+    summary:
+      "Next.js employee self-service portal UI for transfer, IT hardware, and clearance requests, with dynamic forms, role-based actions, status timeline, and checklist progress.",
+    outcome:
+      "Shows production-style frontend UX for the same HR workflows as the Odoo module.",
+    tags: ["Next.js", "APIs"],
+    github: "https://github.com/devShine3/hr-request-portal",
+  },
+  {
     id: "lannpya",
     title: "Lann Pya — guides platform",
     summary:
