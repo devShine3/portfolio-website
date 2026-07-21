@@ -53,6 +53,7 @@ export const projects: Project[] = [
       "Shows marketing page craft plus a focused app shell for a different ops workflow.",
     tags: ["Next.js"],
     github: "https://github.com/devShine3/shiftline",
+    live: "https://shiftline-blush.vercel.app",
   },
   {
     id: "lannpya",
