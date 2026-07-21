@@ -45,6 +45,16 @@ export const projects: Project[] = [
     live: "https://hr-request-portal.vercel.app",
   },
   {
+    id: "shiftline",
+    title: "Shiftline — shift handover",
+    summary:
+      "Micro-SaaS product UI: branded landing, demo login, and an ops desk for shift handover notes with blockers, follow-ups, priority flags, and acknowledgements.",
+    outcome:
+      "Shows marketing page craft plus a focused app shell for a different ops workflow.",
+    tags: ["Next.js"],
+    github: "https://github.com/devShine3/shiftline",
+  },
+  {
     id: "lannpya",
     title: "Lann Pya — guides platform",
     summary:
