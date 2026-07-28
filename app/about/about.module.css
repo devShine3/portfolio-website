@@ -32,8 +32,10 @@
 .photo {
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 4;
   object-fit: cover;
-  filter: grayscale(0.2) contrast(1.05);
+  object-position: center 18%;
+  filter: grayscale(0.12) contrast(1.04) saturate(0.92);
 }
 
 .copy p {
@@ -55,6 +57,20 @@
   font-size: 0.72rem;
   line-height: 1.55;
   color: var(--muted);
+}
+
+.contact {
+  margin: 0.85rem 0 0 !important;
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
 }
 
 .block {

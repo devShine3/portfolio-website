@@ -4,10 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { site } from "@/content/education";
+import ThemeToggle from "@/components/ThemeToggle";
 import styles from "./SiteHeader.module.css";
 
 const links = [
   { href: "/work", label: "Work" },
+  { href: "/architecture", label: "Architecture" },
   { href: "/experience", label: "Experience" },
   { href: "/about", label: "About" },
 ] as const;
@@ -51,6 +53,10 @@ export default function SiteHeader() {
               </Link>
             );
           })}
+          <ThemeToggle />
+          <span className={styles.cmdHint} title="Command palette">
+            ⌘K
+          </span>
         </nav>
       </div>
     </header>

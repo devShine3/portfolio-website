@@ -38,5 +38,8 @@ next-env.d.ts
 # vercel
 .vercel
 
+# local photo backups
+public/shine-cafe-original.jpeg
+
 # vite leftovers
 vite.config.js

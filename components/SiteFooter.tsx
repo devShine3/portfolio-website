@@ -8,17 +8,15 @@ export default function SiteFooter() {
         <p className={styles.meta}>
           <span className="mono">devShine3</span>
           <span className={styles.sep}>·</span>
-          <span>Built with Next.js</span>
+          <span>{site.location}</span>
         </p>
         <div className={styles.links}>
+          <a href={`mailto:${site.email}`}>Email</a>
           <a href={site.github} target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
           <a href={site.linkedin} target="_blank" rel="noopener noreferrer">
             LinkedIn
-          </a>
-          <a href={site.facebook} target="_blank" rel="noopener noreferrer">
-            Facebook
           </a>
         </div>
       </div>

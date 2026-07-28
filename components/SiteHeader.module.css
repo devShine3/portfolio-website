@@ -65,6 +65,16 @@
   animation: underline 0.35s ease both;
 }
 
+.cmdHint {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 0.15rem 0.4rem;
+  user-select: none;
+}
+
 @keyframes underline {
   from {
     transform: scaleX(0);
@@ -116,5 +126,9 @@
 
   .active {
     color: var(--accent);
+  }
+
+  .cmdHint {
+    display: none;
   }
 }

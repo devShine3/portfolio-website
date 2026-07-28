@@ -1,0 +1,106 @@
+.panel {
+  border: 1px solid var(--line);
+  background: var(--panel);
+  padding: 0;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.7rem 0.9rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-strong);
+}
+
+.dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--line);
+}
+
+.dot:nth-child(1) {
+  background: color-mix(in srgb, var(--accent) 55%, var(--line));
+}
+
+.chromeLabel {
+  margin-left: auto;
+  font-size: 0.65rem !important;
+}
+
+.layers {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+}
+
+.layer {
+  display: grid;
+  grid-template-columns: 2.25rem 1fr;
+  gap: 0.75rem;
+  padding: 0.95rem 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 75%, transparent);
+  animation: layerIn 0.55s ease both;
+}
+
+.layer:first-child {
+  border-top: none;
+}
+
+.idx {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  padding-top: 0.15rem;
+}
+
+.layer strong {
+  display: block;
+  font-size: 0.98rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.layer p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.foot {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--panel-strong);
+}
+
+@keyframes layerIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

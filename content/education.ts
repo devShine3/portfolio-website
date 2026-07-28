@@ -5,7 +5,7 @@ export type EducationItem = {
   detail: string;
 };
 
-/** Order: foundation first, then continuing study — Odoo story stays primary on About */
+/** Order: foundation first, then later study */
 export const education: EducationItem[] = [
   {
     id: "nmc",
@@ -37,9 +37,10 @@ export const site = {
   name: "Htet Aung Shine",
   nameDisplay: "HTET AUNG SHINE",
   tagline: "Odoo systems · full-stack products",
-  email: null as string | null,
+  email: "shineework33@gmail.com",
+  location: "Al Ain, UAE",
+  url: "https://htetaungshine.site",
   resume: "/HTETAUNGSHINE.pdf",
   github: "https://github.com/devShine3",
   linkedin: "https://www.linkedin.com/in/htet-aung-shine-813822233/",
-  facebook: "https://www.facebook.com/htetag.shine.71/",
 } as const;

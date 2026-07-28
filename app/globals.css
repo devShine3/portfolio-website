@@ -1,15 +1,33 @@
-:root {
+:root,
+[data-theme="light"] {
   --bg: #e8e6e1;
   --ink: #141414;
   --muted: #5c5a56;
   --line: #c9c6bf;
   --accent: #2f5d50;
   --accent-soft: rgba(47, 93, 80, 0.12);
+  --panel: color-mix(in srgb, var(--ink) 3.5%, transparent);
+  --panel-strong: color-mix(in srgb, var(--ink) 6%, transparent);
+  --glow: rgba(47, 93, 80, 0.07);
   --max: 52rem;
   --max-wide: 64rem;
   --pad: clamp(1.25rem, 4vw, 2.5rem);
   --font-sans: var(--font-space-grotesk), system-ui, sans-serif;
   --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #121311;
+  --ink: #eceae4;
+  --muted: #9b9890;
+  --line: #2f312c;
+  --accent: #7eb89a;
+  --accent-soft: rgba(126, 184, 154, 0.14);
+  --panel: color-mix(in srgb, #fff 4%, transparent);
+  --panel-strong: color-mix(in srgb, #fff 7%, transparent);
+  --glow: rgba(126, 184, 154, 0.08);
+  color-scheme: dark;
 }
 
 *,
@@ -31,11 +49,12 @@ body {
   color: var(--ink);
   background-color: var(--bg);
   background-image:
-    linear-gradient(rgba(20, 20, 20, 0.03) 1px, transparent 1px),
-    radial-gradient(ellipse at 20% 0%, rgba(47, 93, 80, 0.06), transparent 55%),
+    linear-gradient(color-mix(in srgb, var(--ink) 4%, transparent) 1px, transparent 1px),
+    radial-gradient(ellipse at 18% 0%, var(--glow), transparent 55%),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
   background-size: 100% 2.75rem, 100% 100%, 180px 180px;
   -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 a {

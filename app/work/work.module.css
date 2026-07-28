@@ -18,5 +18,16 @@
 .lead {
   margin: 0.75rem 0 0;
   color: var(--muted);
-  max-width: 28rem;
+  max-width: 36rem;
+}
+
+.lead a {
+  color: var(--accent);
+}
+
+.kbd {
+  font-family: var(--font-mono);
+  font-size: 0.78em;
+  border: 1px solid var(--line);
+  padding: 0.05rem 0.35rem;
 }

@@ -13,7 +13,7 @@ export default function ExperiencePage() {
     <section className={`${styles.page} page-enter`}>
       <header className={styles.header}>
         <p className="mono">02 / Experience</p>
-        <h1 className={styles.title}>Professional path</h1>
+        <h1 className={styles.title}>Experience</h1>
       </header>
 
       <ol className={styles.list}>

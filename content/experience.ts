@@ -14,11 +14,11 @@ export const experiences: Experience[] = [
     period: "Feb 2026 — Present",
     role: "Developer",
     company: "El Race Cons. & Gen. Cont. Co. LLC",
-    location: "On-site",
+    location: "Al Ain · On-site",
     bullets: [
-      "Build and extend production Odoo ERP — payroll and labor costing, HR requests and clearance, IT hardware workflows.",
-      "Ship ops-finance improvements for petty cash batches, expense approvals, and project/city governance.",
-      "Maintain a centralized mobile and hub API layer (auth, HR/projects/requests) with consistent REST responses.",
+      "Build and extend production Odoo: payroll and labor costing, HR requests and clearance, IT hardware workflows.",
+      "Improve petty-cash batches, expense approvals, and project/city review rules.",
+      "Maintain the mobile/hub REST API (auth, HR, projects, requests) with consistent JSON responses.",
     ],
     stack: ["Python", "Odoo", "PostgreSQL", "APIs", "JavaScript"],
   },
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
   },
   {
     id: "odoo-dev",
-    period: "2022 — 2024",
+    period: "Sep 2022 — Apr 2024",
     role: "Odoo Developer",
     company: "Myanmar Information Technology",
     bullets: [
@@ -48,19 +48,19 @@ export const experiences: Experience[] = [
   },
   {
     id: "intern",
-    period: "2022",
+    period: "Jul 2022 — Aug 2022",
     role: "Developer Intern",
     company: "Myanmar Information Technology",
     bullets: [
-      "Customized Odoo modules against client requirements.",
-      "Shipped features, fixed issues, and documented processes.",
-      "Grew Python and ERP skills on live projects.",
+      "Customized Odoo modules for client needs.",
+      "Added features, fixed bugs, and wrote documentation.",
+      "Learned Python and ERP delivery on live projects.",
     ],
     stack: ["Python", "Odoo", "ERP"],
   },
   {
     id: "it-support",
-    period: "2021 — 2022",
+    period: "Feb 2021 — May 2022",
     role: "IT Support Specialist",
     company: "Kangle (Kyan Sit Min)",
     bullets: [

@@ -32,27 +32,42 @@ export default function AboutPage() {
         <div className={styles.copy}>
           <p>
             I build production Odoo systems — payroll costing, employee request
-            flows, expense and petty-cash ops, and the Python/PostgreSQL layers
-            that keep them reliable for real teams.
+            flows, expense and petty-cash batches, and the Python/PostgreSQL
+            layers behind them.
           </p>
           <p>
-            I also ship full products end to end.{" "}
+            I also ship full products.{" "}
             <a href="https://lannpya.site" target="_blank" rel="noopener noreferrer">
               Lann Pya
             </a>{" "}
-            is one: an Odoo-backed content platform with a Next.js front end for
-            Myanmar-language guides, news, and community publishing.
+            is an Odoo-backed content platform with a Next.js front end for
+            Myanmar-language guides, news, and community posts.{" "}
+            <a
+              href="https://apps.odoo.com/apps/modules/18.0/hr_ops_suite"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              HR Ops Suite
+            </a>{" "}
+            is on the Odoo Apps Store.
           </p>
           <p>
-            Day to day I sit between process and code — models, approvals, REST
-            APIs for mobile, reports — the work that makes ERP usable, not just
-            installed. See{" "}
-            <Link href="/work">selected work</Link>.
+            Day to day I work on models, approvals, REST APIs for mobile, and
+            reports — the parts that make ERP usable day to day. See{" "}
+            <Link href="/work">work</Link>,{" "}
+            <Link href="/architecture">architecture</Link>, or press ⌘K.
           </p>
           <pre className={styles.snippet} aria-hidden="true">
-            <code>{`# api / payslip run / request.approve
-# Odoo models · PostgreSQL · REST for mobile`}</code>
+            <code>{`# batch sheet · mapped() · REST hub
+# Odoo models · PostgreSQL · Next.js products`}</code>
           </pre>
+          <p className={styles.contact}>
+            <span className="mono">based</span> {site.location}
+          </p>
+          <p className={styles.contact}>
+            <span className="mono">contact</span>{" "}
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+          </p>
         </div>
       </div>
 

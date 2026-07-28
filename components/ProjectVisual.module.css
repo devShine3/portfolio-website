@@ -1,0 +1,77 @@
+.frame {
+  margin-top: 1.15rem;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  overflow: hidden;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  background: var(--panel-strong);
+}
+
+.dots {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.dots i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--line);
+  display: block;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.body {
+  padding: 0.85rem 0.9rem 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  padding: 0.55rem 0.65rem;
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  background: color-mix(in srgb, var(--bg) 55%, transparent);
+}
+
+.pill {
+  width: 0.45rem;
+  height: 0.45rem;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+
+.green .dots i:first-child,
+.green .pill {
+  background: var(--accent);
+}
+
+.ink .pill {
+  background: var(--ink);
+}
+
+.warm .pill {
+  background: color-mix(in srgb, var(--accent) 55%, #c4a574);
+}
