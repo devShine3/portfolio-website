@@ -39,7 +39,7 @@ export const site = {
   tagline: "Odoo systems · full-stack products",
   email: "shineework33@gmail.com",
   location: "Al Ain, UAE",
-  url: "https://htetaungshine.site",
+  url: "https://htetaungshine.dev",
   resume: "/HTETAUNGSHINE.pdf",
   github: "https://github.com/devShine3",
   linkedin: "https://www.linkedin.com/in/htet-aung-shine-813822233/",
